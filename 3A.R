@@ -1,0 +1,29 @@
+sdata<-data.frame(sname=c("AJU","AKXSH","AARON"),
+                  srollno=c(12,15,18),
+                  ssex=c("M","M","M"),
+                  sbranch=c("CSE","MECH","ECE"),
+                  m1=c(90,80,70),
+                  m2=c(82,92,72),
+                  m3=c(75,85,95),
+                  m4=c(88,78,98),
+                  m5=c(71,81,91))
+head(sdata)
+nrow(sdata)
+ncol(sdata)
+result=vector(mode="character",length=0)
+for (i in 1:(sdata))
+{
+  if(sdata$m1[i]>50&&sdata$m2[i]>50&&sdata$m3[i]>50&&sdata$m4[i]>50&&sdata$m5[i]>50)
+  {
+    status<-pass
+  }
+  else
+  {
+    status<-fail
+  }
+  result<-append(result,status)
+}
+Total=sdata$m1+sdata$m2+sdata$m3+sdata$m4+sdata$m5
+ptge=Total/5
+tdata<-cbind(sdata,Total,ptge)
+tdata

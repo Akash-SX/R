@@ -1,0 +1,4 @@
+sname, srollno, sage, ssex, sbranch, m1, m2, m3, m4, m5 
+Raja, 101, 19, "male", "CSE", 90,95,85,70,67
+somu, 103, 20, "male", "MECH", 79,85,25,40,67
+Roja, 102, 18, "female", "EEE", 88,90,85,60,89

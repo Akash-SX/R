@@ -1,0 +1,12 @@
+packages="datasets"
+head(mtcars)
+u1<-unique(mtcars$carb)
+cat("Carbureators:",u1)
+t1=table(mtcars$carb)
+barplot(t1,xlab="Air Temperatures",ylab="Frequencies",main="Frequency Distribution of mtcars carbureators")
+u2<-unique(airquality$Temp)
+cat("Air Quality's Temperatures",u2)
+t2=table(airquality$Temp)
+barplot(t2,xlab="Air Temperatures",ylab="Frequencies",main="Frequency Distribution of Air Temperatures")
+t3=table(cut(airquality$Temp,9))
+barplot(t3,xlab="Range of Air Temperatures",ylab="Frequencies",main="Frequency Distribution of range of air temperatures")
